@@ -1,0 +1,23 @@
+
+whats happening behind this code?
+what is "haar_cascades"?
+A haar_cascades is a algorithm which we use to identify objects or image.
+This multiple classifier in cascades with positive and negative examples of an image.
+The Haar cascade classifier uses a set of features to identify objects,
+such as edges, lines, and corners, and applies them to different regions of an image.
+It then uses these features to classify whether a region contains the object of interest or not.
+
+Haar_features:subtracting the sum of pixel intensities in one region of an image from the sum of pixel intensities in another region.
+there are edge,line,four-rectangles features.
+these features are used to identify object
+how darker and brighter is region of an image than an another region
+we use grayscale because color is no relevant for brightness
+
+Training data
+positive images and negatives images
+to supervisedd learning
+find the winning haar features, better match
+we try every Haar_features on every training image
+every type,localisation,size
+return the substraction beetween the two region
+below 50 is wrong
